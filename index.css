@@ -744,3 +744,27 @@ footer {
     .header-content nav { max-width: 100%; width: 100%; justify-content: flex-start; }
     .hero-content { grid-template-columns: minmax(0, 1fr); }
 }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -.06em;
+  white-space: nowrap;
+}
+
+.logo-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 23px;
+  color: #180F28;
+  background: #C9A4FF ;
+  border-radius: 11px;
+  line-height: 1;
+}
+.brand-wave {
+  color: #C9A4FF;;
+}
