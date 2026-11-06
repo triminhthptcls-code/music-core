@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SoundWave - nền tảng âm nhạc độc lập minh họa phục vụ bài tập Frontend.">
+  <title>Tìm kiếm bài hát | SoundWave</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="pages.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="search">
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="SoundWave - về trang chủ"><span
+          class="logo-icon">〽</span><span>sound<span class="brand-wave">wave</span></span></a>
+      <nav class="nav-scroll" aria-label="Điều hướng chính">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="search.html" class="nav-link active"aria-current="page">Tìm kiếm</a>
+        <a href="song-detail.html" class="nav-link">Bài hát</a>
+        <a href="artist-songs.html" class="nav-link">Ca sĩ</a>
+        <a href="composer-songs.html" class="nav-link">Tác giả</a>
+        <a href="album-songs.html" class="nav-link">Album</a>
+        <a href="detail.html" class="nav-link">Tin tức</a>
+        <a href="about.html" class="nav-link">Về chúng tôi</a>
+        <a href="contact.html" class="nav-link">Liên hệ</a>
+        <a href="policy-terms.html" class="nav-link">Điều khoản</a>
+      </nav>
+      <a class="premium-button" href="policy-terms.html">Premium <span aria-hidden="true">✦</span></a>
+    </div>
+  </header>
+  <main id="noi-dung">
+    <section class="page-banner container">
+      <p class="eyebrow">SEARCH &amp; DISCOVER</p>
+      <h1>Tìm giai điệu <span class="gradient-text">của bạn</span>
+      </h1>
+      <p class="muted">Lọc bài hát theo tên, nghệ sĩ, thể loại và năm phát hành.</p>
+    </section>
+    <section class="container section-tight">
+      <div class="search-panel">
+        <label for="search-input" class="field-label">Tìm theo bài hát hoặc ca sĩ</label>
+        <input id="search-input"class="search-input" type="search" placeholder="Ví dụ: Midnight City, An Nhiên..." autocomplete="off">
+        <div class="filter-grid">
+          <label>Thể loại
+            <select id="genre-filter">
+              <option value="all">Tất cả thể loại</option>
+              <option value="Indie">Indie</option>
+              <option value="Lo-Fi">Lo-Fi</option>
+              <option value="EDM">EDM</option>
+              <option value="Acoustic">Acoustic</option>
+            </select></label>
+            <label>Năm phát hành
+              <select id="year-filter">
+              <option value="all">Tất cả năm</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select></label>
+            <label>Sắp xếp<select id="sort-filter">
+              <option value="popular">Nghe nhiều nhất</option>
+              <option value="newest">Mới nhất</option>
+              <option value="az">Tên A → Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">KẾT QUẢ</p>
+          <h2>Kho bài hát <span class="count-pill" id="result-count">8 kết quả</span>
+          </h2>
+        </div>
+        <div class="view-switch" aria-label="Kiểu hiển thị">
+          <button type="button" id="view-list" class="selected" aria-pressed="true">☷ Danh sách</button><button
+            type="button" id="view-grid" aria-pressed="false">▦ Lưới</button>
+        </div>
+      </div>
+      <div class="chart-list searchable-list" id="search-results">
+        <article class="track-row" data-title="midnight city" data-artist="an nhiên" data-genre="Indie" data-year="2026"
+          data-plays="124800">
+          <span class="track-number">01</span>
+          <a class="track-cover" href="song-detail.html"aria-label="Xem Midnight City">
+            <img class="cover-img" src="assets/cover-1.svg" alt="Ảnh bìa minh họa số 1"loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Midnight City</a>
+            <a href="artist-songs.html"class="muted track-sub">An Nhiên</a>
+          </div>
+          <span class="track-meta hide-mobile">Indie</span>
+          <span class="track-meta hide-tablet">124,800 lượt</span>
+          <button type="button" class="icon-button play-song" data-song="Midnight City"
+            data-artist="An Nhiên" data-cover="assets/cover-1.svg" aria-label="Chọn bài Midnight City">▶</button>
+        </article>
+        <article class="track-row" data-title="late night letters" data-artist="lê minh" data-genre="Lo-Fi"
+          data-year="2025" data-plays="98300">
+          <span class="track-number">02</span>
+          <a class="track-cover"href="song-detail.html" aria-label="Xem Late Night Letters">
+            <img class="cover-img" src="assets/cover-2.svg"alt="Ảnh bìa minh họa số 2" loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Late Night Letters</a><a href="artist-songs.html"
+              class="muted track-sub">Lê Minh</a>
+          </div>
+          <span class="track-meta hide-mobile">Lo-Fi</span><span class="track-meta hide-tablet">98,300
+            lượt</span>
+            <button type="button" class="icon-button play-song" data-song="Late Night Letters"
+            data-artist="Lê Minh" data-cover="assets/cover-2.svg" aria-label="Chọn bài Late Night Letters">▶</button>
+        </article>
+        <article class="track-row" data-title="after glow" data-artist="mây hồng" data-genre="EDM" data-year="2026"
+          data-plays="167500"><span class="track-number">03</span><a class="track-cover" href="song-detail.html"
+            aria-label="Xem After Glow"><img class="cover-img" src="assets/cover-3.svg" alt="Ảnh bìa minh họa số 3"
+              loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">After Glow</a><a href="artist-songs.html"
+              class="muted track-sub">Mây Hồng</a>
+          </div>
+          <span class="track-meta hide-mobile">EDM</span><span class="track-meta hide-tablet">167,500 lượt</span><button
+            type="button" class="icon-button play-song" data-song="After Glow" data-artist="Mây Hồng"
+            data-cover="assets/cover-3.svg" aria-label="Chọn bài After Glow">▶</button>
+        </article>
+        <article class="track-row" data-title="soft signal" data-artist="an nhiên" data-genre="Acoustic"
+          data-year="2024" data-plays="86100"><span class="track-number">04</span><a class="track-cover"
+            href="song-detail.html" aria-label="Xem Soft Signal"><img class="cover-img" src="assets/cover-4.svg"
+              alt="Ảnh bìa minh họa số 4" loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Soft Signal</a><a href="artist-songs.html"
+              class="muted track-sub">An Nhiên</a>
+          </div>
+          <span class="track-meta hide-mobile">Acoustic</span><span class="track-meta hide-tablet">86,100
+            lượt</span><button type="button" class="icon-button play-song" data-song="Soft Signal"
+            data-artist="An Nhiên" data-cover="assets/cover-4.svg" aria-label="Chọn bài Soft Signal">▶</button>
+        </article>
+        <article class="track-row" data-title="homecoming" data-artist="hoàng nam" data-genre="Indie" data-year="2025"
+          data-plays="73100"><span class="track-number">05</span><a class="track-cover" href="song-detail.html"
+            aria-label="Xem Homecoming"><img class="cover-img" src="assets/cover-5.svg" alt="Ảnh bìa minh họa số 5"
+              loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Homecoming</a><a href="artist-songs.html"
+              class="muted track-sub">Hoàng Nam</a>
+          </div>
+          <span class="track-meta hide-mobile">Indie</span><span class="track-meta hide-tablet">73,100
+            lượt</span><button type="button" class="icon-button play-song" data-song="Homecoming"
+            data-artist="Hoàng Nam" data-cover="assets/cover-5.svg" aria-label="Chọn bài Homecoming">▶</button>
+        </article>
+        <article class="track-row" data-title="moonlight drive" data-artist="lê minh" data-genre="EDM" data-year="2026"
+          data-plays="133800"><span class="track-number">06</span><a class="track-cover" href="song-detail.html"
+            aria-label="Xem Moonlight Drive"><img class="cover-img" src="assets/cover-6.svg" alt="Ảnh bìa minh họa số 6"
+              loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Moonlight Drive</a><a href="artist-songs.html"
+              class="muted track-sub">Lê Minh</a>
+          </div>
+          <span class="track-meta hide-mobile">EDM</span><span class="track-meta hide-tablet">133,800 lượt</span><button
+            type="button" class="icon-button play-song" data-song="Moonlight Drive" data-artist="Lê Minh"
+            data-cover="assets/cover-6.svg" aria-label="Chọn bài Moonlight Drive">▶</button>
+        </article>
+        <article class="track-row" data-title="rainy days" data-artist="mây hồng" data-genre="Lo-Fi" data-year="2024"
+          data-plays="108400"><span class="track-number">07</span><a class="track-cover" href="song-detail.html"
+            aria-label="Xem Rainy Days"><img class="cover-img" src="assets/cover-7.svg" alt="Ảnh bìa minh họa số 7"
+              loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Rainy Days</a><a href="artist-songs.html"
+              class="muted track-sub">Mây Hồng</a>
+          </div>
+          <span class="track-meta hide-mobile">Lo-Fi</span><span class="track-meta hide-tablet">108,400
+            lượt</span><button type="button" class="icon-button play-song" data-song="Rainy Days" data-artist="Mây Hồng"
+            data-cover="assets/cover-7.svg" aria-label="Chọn bài Rainy Days">▶</button>
+        </article>
+        <article class="track-row" data-title="cloud nine" data-artist="hoàng nam" data-genre="Acoustic"
+          data-year="2025" data-plays="95200"><span class="track-number">08</span><a class="track-cover"
+            href="song-detail.html" aria-label="Xem Cloud Nine"><img class="cover-img" src="assets/cover-8.svg"
+              alt="Ảnh bìa minh họa số 8" loading="lazy"></a>
+          <div class="track-info">
+            <a href="song-detail.html" class="track-title">Cloud Nine</a><a href="artist-songs.html"
+              class="muted track-sub">Hoàng Nam</a>
+          </div>
+          <span class="track-meta hide-mobile">Acoustic</span><span class="track-meta hide-tablet">95,200
+            lượt</span><button type="button" class="icon-button play-song" data-song="Cloud Nine"
+            data-artist="Hoàng Nam" data-cover="assets/cover-8.svg" aria-label="Chọn bài Cloud Nine">▶</button>
+        </article>
+      </div>
+      <p id="search-empty" class="empty-state" hidden>Không tìm thấy bài hát. Thử từ khóa hoặc bộ lọc khác nhé.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="logo-icon" aria-hidden="true">〽</span>
+          <span>sound<span class="brand-wave">wave</span></span></a>
+        <p class="muted footer-description">Kết nối nghệ sĩ Indie độc lập với những tâm hồn yêu âm nhạc.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Khám phá</p>
+        <a href="search.html">Tìm bài hát</a><a href="artist-songs.html">Nghệ sĩ</a>
+        <a href="album-songs.html">Album</a>
+      </div>
+      <div>
+        <p class="footer-heading">Thông tin</p>
+        <a href="about.html">Về chúng tôi</a><a href="detail.html">Tin tức</a><a href="contact.html">Liên hệ</a>
+      </div>
+      <div>
+        <p class="footer-heading">Pháp lý</p>
+        <a href="policy-terms.html">Điều khoản sử dụng</a>
+        <a href="policy-terms.html#ban-quyen">Bản quyền</a>
+        <a href="policy-terms.html#bao-mat">Bảo mật</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 SoundWave</span>
+    </div>
+  </footer>
+  <aside class="player" aria-label="Trình phát nhạc mô phỏng">
+    <div class="player-inner container">
+      <div class="player-track">
+        <img class="player-cover" src="assets/cover-1.svg" alt="Ảnh bìa minh họa số 1" loading="lazy">
+        <div class="player-copy">
+          <strong id="player-title">Midnight City</strong><span id="player-artist">An Nhiên</span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <button type="button" class="control-secondary" id="player-prev" aria-label="Bài trước">⏮</button><button
+          type="button" class="control-main" id="player-toggle" aria-label="Phát mô phỏng"
+          aria-pressed="false">▶</button><button type="button" class="control-secondary" id="player-next"
+          aria-label="Bài kế tiếp">⏭</button>
+      </div>
+      <div class="player-right">
+        <span id="player-status">Bản phát minh họa</span>
+        <div class="progress-rail" aria-hidden="true">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</body>
+
+</html> 

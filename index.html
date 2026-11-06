@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoundWave - Khám phá âm nhạc và những bài hát yêu thích.">
+    <title>SoundWave - Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- PHẦN 1: HEADER  -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">♪ SoundWave</a>
+            <nav aria-label="Điều hướng chính">
+                <a href="index.html" class="active" aria-current="page">Trang chủ</a>
+                <a href="search.html">Tìm kiếm</a>
+                <a href="song-detail.html">Bài hát</a>
+                <a href="artist-songs.html">Ca sĩ</a>
+                <a href="composer-songs.html">Nhạc sĩ</a>
+                <a href="album-songs.html">Album</a>
+                <a href="detail.html">Tin tức</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+                <a href="policy-terms.html">Điều khoản</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PHẦN 2: HERO -->
+        <section class="hero">
+            <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+                <source src="video/MONO - 'Chăm Hoa' (Official Music Video).mp4" type="video/mp4">
+            </video>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="small-title">KHÔNG GIAN ÂM NHẠC CỦA BẠN</p>
+                    <h1>Âm nhạc kết nối <span>cảm xúc</span></h1>
+                    <p class="hero-description">Khám phá những bài hát yêu thích,
+                        tận hưởng giai điệu tuyệt vời và đắm chìm trong thế giới âm nhạc
+                        cùng SoundWave.</p>
+                    <div class="hero-buttons">
+                        <a href="search.html" class="btn-primary">Khám phá ngay</a>
+                        <a href="policy-terms.html#premium" class="btn-secondary">Đăng ký Premium</a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- PHẦN 3: TOP CHARTS - -->
+        <section class="charts" id="charts">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Top 5 Trending Songs</h2>
+                    <p>Những bài hát được yêu thích nhất trên SoundWave</p>
+                    <p><a href="search.html">Xem kho nhạc / Tìm bài hát →</a></p>
+                </div>
+                <ol class="chart-list">
+                    <li class="chart-item">
+                        <span class="rank">01</span>
+                        <div class="song-cover cover-one" aria-hidden="true">♪</div>
+                        <div class="song-info">
+                            <h3>Chăm Hoa</h3>
+                            <p>MONO</p>
+                        </div>
+                        <span class="song-views">125.4K lượt nghe</span>
+                    </li>
+                    <li class="chart-item">
+                        <span class="rank">02</span>
+                        <div class="song-cover cover-two" aria-hidden="true">♫</div>
+                        <div class="song-info">
+                            <h3>Có Chắc Yêu Là Đây</h3>
+                            <p>Sơn Tùng M-TP</p>
+                        </div>
+                        <span class="song-views">98.2K lượt nghe</span>
+                    </li>
+                    <li class="chart-item">
+                        <span class="rank">03</span>
+                        <div class="song-cover cover-three" aria-hidden="true">★</div>
+                        <div class="song-info">
+                            <h3>Sóng Gió</h3>
+                            <p>K-ICM x Jack</p>
+                        </div>
+                        <span class="song-views">86.7K lượt nghe</span>
+                    </li>
+                    <li class="chart-item">
+                        <span class="rank">04</span>
+                        <div class="song-cover cover-four" aria-hidden="true">♬</div>
+                        <div class="song-info">
+                            <h3>Một Nửa Sự Thật</h3>
+                            <p>24K.Right</p>
+                        </div>
+                        <span class="song-views">74.3K lượt nghe</span>
+                    </li>
+                    <li class="chart-item">
+                        <span class="rank">05</span>
+                        <div class="song-cover cover-five" aria-hidden="true">✦</div>
+                        <div class="song-info">
+                            <h3>Trở Về</h3>
+                            <p>Wxrdie</p>
+                        </div>
+                        <span class="song-views">63.1K lượt nghe</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PHẦN 4: THỂ LOẠI -->
+        <section class="genres" id="genres">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>🎧 Khám phá thể loại</h2>
+                    <p>Lựa chọn phong cách âm nhạc phù hợp với tâm trạng của bạn</p>
+                </div>
+                <div class="genre-list">
+                    <a href="search.html?genre=Indie" class="genre-card indie">
+                        <div class="genre-icon" aria-hidden="true">✨</div>
+                        <h3>Indie</h3>
+                        <p>Âm nhạc độc lập, đầy cá tính</p>
+                    </a>
+                    <a href="search.html?genre=Lo-Fi" class="genre-card lofi">
+                        <div class="genre-icon" aria-hidden="true">☕</div>
+                        <h3>Lo-Fi Học bài</h3>
+                        <p>Những giai điệu nhẹ nhàng giúp tập trung</p>
+                    </a>
+                    <a href="search.html?genre=EDM" class="genre-card edm">
+                        <div class="genre-icon" aria-hidden="true">⚡</div>
+                        <h3>EDM</h3>
+                        <p>Sôi động, mạnh mẽ và tràn đầy năng lượng</p>
+                    </a>
+                    <a href="search.html?genre=Acoustic" class="genre-card acoustic">
+                        <div class="genre-icon" aria-hidden="true">🎸</div>
+                        <h3>Acoustic</h3>
+                        <p>Âm thanh mộc mạc, cảm xúc chân thật</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN 5: PREMIUM -->
+        <section class="premium" id="premium">
+            <div class="container premium-content">
+                <h2>SoundWave Premium</h2>
+                <p>Trải nghiệm âm nhạc không giới hạn. <a href="policy-terms.html#premium">Tìm hiểu gói Premium →</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <p class="footer-logo">♪ SoundWave</p>
+            <p>© 2026 SoundWave. All rights reserved.</p>
+            <p><a href="about.html">Giới thiệu</a> · <a href="contact.html">Liên hệ</a> · <a
+                    href="policy-terms.html">Điều khoản</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

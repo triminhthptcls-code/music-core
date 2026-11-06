@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SoundWave - nền tảng âm nhạc độc lập minh họa phục vụ bài tập Frontend.">
+  <title>Liên hệ và đóng góp | SoundWave</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="pages.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#noi-dung">Bỏ qua menu</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="SoundWave - về trang chủ"><span class="logo-icon" aria-hidden="true">〽</span><span>sound<span class="brand-wave">wave</span></span></a>
+      <nav class="nav-scroll" aria-label="Điều hướng chính"><a href="index.html" class="nav-link">Trang chủ</a><a href="search.html" class="nav-link">Tìm kiếm</a><a href="song-detail.html" class="nav-link">Bài hát</a><a href="artist-songs.html" class="nav-link">Ca sĩ</a><a href="composer-songs.html" class="nav-link">Tác giả</a><a href="album-songs.html" class="nav-link">Album</a><a href="detail.html" class="nav-link">Tin tức</a><a href="about.html" class="nav-link">Về chúng tôi</a><a href="contact.html" class="nav-link active" aria-current="page">Liên hệ</a><a href="policy-terms.html" class="nav-link">Điều khoản</a></nav>
+      <a class="premium-button" href="policy-terms.html#premium">Premium <span aria-hidden="true">✦</span></a>
+    </div>
+  </header>
+  <main id="noi-dung">
+<section class="page-banner container"><p class="eyebrow">LET’S CONNECT</p>
+<h1>Cùng tạo ra <span class="gradient-text">điều tuyệt vời</span>
+</h1>
+<p class="muted">Bạn có ý tưởng hợp tác hoặc góp ý cho SoundWave? Chúng mình rất muốn lắng nghe.</p></section>
+<section class="section-tight container two-col"><article class="surface-panel"><h2>Gửi lời nhắn</h2>
+<p class="muted">Biểu mẫu minh họa, chưa kết nối máy chủ/email.</p>
+<form id="contact-form">
+<div class="form-row">
+<label>Họ và tên <input name="name" type="text" required minlength="2" placeholder="Nhập họ tên"></label><label>Email <input name="email" type="email" required placeholder="ban@example.com"></label>
+</div>
+<label>Loại yêu cầu <select name="type" required><option value="">Chọn loại yêu cầu</option>
+<option>Hợp tác nghệ sĩ</option>
+<option>Góp ý sản phẩm</option>
+<option>Hỗ trợ</option>
+<option>Khác</option></select></label><label>Nội dung <textarea name="message" required minlength="10" rows="6" placeholder="Viết lời nhắn của bạn..."></textarea></label><button class="btn btn-primary" type="submit">Gửi tin nhắn →</button><p role="status" id="contact-status" class="form-status" aria-live="polite"></p>
+</form></article><aside class="surface-panel contact-aside"><h2>Thông tin hỗ trợ</h2>
+<div class="contact-item">
+<strong>✉ Email</strong><span>hello@soundwave.example (minh họa)</span>
+</div>
+<div class="contact-item">
+<strong>☎ Hotline</strong><span>[Điền số điện thoại thật nếu có]</span>
+</div>
+<div class="contact-item">
+<strong>◉ Studio</strong><span>Địa điểm minh họa: Khu vực Hồ Gươm, Hà Nội</span>
+</div>
+<div class="map-frame"><iframe title="Bản đồ vị trí minh họa khu vực Hồ Gươm, Hà Nội" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Ho+Guom,+Ha+Noi&amp;output=embed"></iframe></div>
+<p class="tiny-note">Khi có địa chỉ Studio thật, hãy thay đường dẫn trong thuộc tính src của iframe.</p></aside></section></main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+<div>
+<a class="brand" href="index.html"><span class="logo-icon" aria-hidden="true">〽</span><span>sound<span class="brand-wave">wave</span></span></a><p class="muted footer-description">Kết nối nghệ sĩ Indie độc lập với những tâm hồn yêu âm nhạc.</p>
+</div>
+<div>
+<p class="footer-heading">Khám phá</p>
+<a href="search.html">Tìm bài hát</a><a href="artist-songs.html">Nghệ sĩ</a><a href="album-songs.html">Album</a>
+</div>
+<div>
+<p class="footer-heading">Thông tin</p>
+<a href="about.html">Về chúng tôi</a><a href="detail.html">Tin tức</a><a href="contact.html">Liên hệ</a>
+</div>
+<div>
+<p class="footer-heading">Pháp lý</p>
+<a href="policy-terms.html">Điều khoản sử dụng</a><a href="policy-terms.html#ban-quyen">Bản quyền</a><a href="policy-terms.html#bao-mat">Bảo mật</a>
+</div>
+</div>
+    <div class="container footer-bottom">
+<span>© 2026 SoundWave • Website demo phục vụ học tập</span><span>HTML • CSS • JavaScript</span>
+</div>
+  </footer>
+  <aside class="player" aria-label="Trình phát nhạc mô phỏng"><div class="player-inner container">
+<div class="player-track">
+<img class="player-cover" src="assets/cover-1.svg" alt="Ảnh bìa minh họa số 1" loading="lazy"><div class="player-copy">
+<strong id="player-title">Midnight City</strong><span id="player-artist">An Nhiên</span>
+</div>
+</div>
+<div class="player-controls">
+<button type="button" class="control-secondary" id="player-prev" aria-label="Bài trước">⏮</button><button type="button" class="control-main" id="player-toggle" aria-label="Phát mô phỏng" aria-pressed="false">▶</button><button type="button" class="control-secondary" id="player-next" aria-label="Bài kế tiếp">⏭</button>
+</div>
+<div class="player-right">
+<span id="player-status">Bản phát minh họa</span><div class="progress-rail" aria-hidden="true"><div></div></div>
+</div>
+</div></aside>
+</body>
+</html>
